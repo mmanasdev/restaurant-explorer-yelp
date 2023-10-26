@@ -11,6 +11,10 @@
 		3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC442AE970C700C5C22A /* ListViewController.xib */; };
 		3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */; };
 		3A43AC4D2AE9712400C5C22A /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC4B2AE9712400C5C22A /* LocationViewController.xib */; };
+		3A43AC512AEAAD4200C5C22A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC4F2AEAAD4200C5C22A /* SearchViewController.swift */; };
+		3A43AC522AEAAD4200C5C22A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC502AEAAD4200C5C22A /* SearchViewController.xib */; };
+		3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC542AEAAEEB00C5C22A /* Business.swift */; };
+		3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC562AEAB28200C5C22A /* BusinessMock.json */; };
 		3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A12AE967770048DF46 /* AppDelegate.swift */; };
 		3A9918A42AE967770048DF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A32AE967770048DF46 /* SceneDelegate.swift */; };
 		3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A52AE967770048DF46 /* MainViewController.swift */; };
@@ -24,6 +28,10 @@
 		3A43AC442AE970C700C5C22A /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		3A43AC4B2AE9712400C5C22A /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		3A43AC4F2AEAAD4200C5C22A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3A43AC502AEAAD4200C5C22A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		3A43AC542AEAAEEB00C5C22A /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		3A43AC562AEAB28200C5C22A /* BusinessMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessMock.json; sourceTree = "<group>"; };
 		3A99189E2AE967770048DF46 /* restaurant-explorer-yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restaurant-explorer-yelp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9918A12AE967770048DF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9918A32AE967770048DF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,24 @@
 			path = LocationView;
 			sourceTree = "<group>";
 		};
+		3A43AC4E2AEAAD2400C5C22A /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3A43AC4F2AEAAD4200C5C22A /* SearchViewController.swift */,
+				3A43AC502AEAAD4200C5C22A /* SearchViewController.xib */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		3A43AC532AEAAEBB00C5C22A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A43AC542AEAAEEB00C5C22A /* Business.swift */,
+				3A43AC562AEAB28200C5C22A /* BusinessMock.json */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3A9918952AE967770048DF46 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +108,8 @@
 		3A9918A02AE967770048DF46 /* restaurant-explorer-yelp */ = {
 			isa = PBXGroup;
 			children = (
+				3A43AC532AEAAEBB00C5C22A /* Models */,
+				3A43AC4E2AEAAD2400C5C22A /* SearchView */,
 				3A43AC472AE970DC00C5C22A /* LocationView */,
 				3A43AC422AE9709200C5C22A /* ListView */,
 				3A9918A12AE967770048DF46 /* AppDelegate.swift */,
@@ -155,6 +183,8 @@
 			files = (
 				3A9918AE2AE9677A0048DF46 /* LaunchScreen.storyboard in Resources */,
 				3A9918AB2AE9677A0048DF46 /* Assets.xcassets in Resources */,
+				3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */,
+				3A43AC522AEAAD4200C5C22A /* SearchViewController.xib in Resources */,
 				3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */,
 				3A43AC4D2AE9712400C5C22A /* LocationViewController.xib in Resources */,
 				3A9918A92AE967770048DF46 /* MainViewController.storyboard in Resources */,
@@ -168,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A43AC512AEAAD4200C5C22A /* SearchViewController.swift in Sources */,
+				3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
 				3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */,
 				3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */,

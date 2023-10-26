@@ -19,8 +19,8 @@ class MainViewController: UIViewController {
         setupInitialViewController()
     }
     
-    private lazy var listViewController: ListViewController = {
-            return ListViewController(nibName: "ListViewController", bundle: nil)
+    private lazy var searchViewController: SearchViewController = {
+            return SearchViewController(nibName: "SearchViewController", bundle: nil)
         }()
         
         private lazy var locationViewController: LocationViewController = {
@@ -28,18 +28,18 @@ class MainViewController: UIViewController {
         }()
     
     private func setupInitialViewController() {
-        addChild(listViewController)
-        listViewController.view.frame = containerView.bounds
-        containerView.addSubview(listViewController.view)
-        listViewController.didMove(toParent: self)
+        addChild(searchViewController)
+        searchViewController.view.frame = containerView.bounds
+        containerView.addSubview(searchViewController.view)
+        searchViewController.didMove(toParent: self)
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             remove(child: locationViewController)
-            add(child: listViewController)
+            add(child: searchViewController)
         } else {
-            remove(child: listViewController)
+            remove(child: searchViewController)
             add(child: locationViewController)
         }
     }
