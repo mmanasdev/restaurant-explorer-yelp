@@ -61,6 +61,11 @@ struct Location: Decodable {
     let country: String?
     let state: String?
     let displayAddress: [String]?
+    
+    func displayFullAdress() -> String {
+        guard let displayAddress = displayAddress else { return "" }
+        return displayAddress.joined(separator: " ")
+    }
 
     enum CodingKeys: String, CodingKey {
         case address1, address2, address3, city

@@ -13,12 +13,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak private(set) var containerView: UIView!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupInitialViewController()
-    }
-    
     private lazy var searchViewController: SearchViewController = {
             return SearchViewController(nibName: "SearchViewController", bundle: nil)
         }()
@@ -26,6 +20,14 @@ class MainViewController: UIViewController {
         private lazy var locationViewController: LocationViewController = {
             return LocationViewController(nibName: "LocationViewController", bundle: nil)
         }()
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupInitialViewController()
+    }
+    
+    
     
     private func setupInitialViewController() {
         addChild(searchViewController)

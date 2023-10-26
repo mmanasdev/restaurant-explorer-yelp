@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="restaurant_explorer_yelp" customModuleProvider="target">
             <connections>
-                <outlet property="searchDisplayController" destination="scG-MI-d7w" id="pee-mH-D7p"/>
+                <outlet property="listContainerView" destination="Khh-ax-ifI" id="YRx-7p-fcZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +18,36 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-OA-Dtc">
+                    <rect key="frame" x="0.0" y="59" width="393" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="mIj-Qm-KFq"/>
+                    </constraints>
+                </view>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-ax-ifI">
+                    <rect key="frame" x="0.0" y="187" width="393" height="631"/>
+                </containerView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <constraints>
+                <constraint firstItem="P2h-OA-Dtc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VnK-PT-CgR"/>
+                <constraint firstItem="Khh-ax-ifI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yc5-nm-5sI"/>
+                <constraint firstItem="Khh-ax-ifI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="g6Q-U5-dyt"/>
+                <constraint firstItem="Khh-ax-ifI" firstAttribute="top" secondItem="P2h-OA-Dtc" secondAttribute="bottom" id="gWK-GE-Bpg"/>
+                <constraint firstItem="P2h-OA-Dtc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hP9-pZ-nng"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P2h-OA-Dtc" secondAttribute="trailing" id="mXu-vQ-arA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Khh-ax-ifI" secondAttribute="trailing" id="tmL-Qe-8mt"/>
+            </constraints>
             <point key="canvasLocation" x="57" y="20"/>
         </view>
-        <searchDisplayController id="scG-MI-d7w">
-            <connections>
-                <outlet property="delegate" destination="-1" id="38G-HI-iHV"/>
-                <outlet property="searchContentsController" destination="-1" id="NhN-EP-3E7"/>
-                <outlet property="searchResultsDataSource" destination="-1" id="1fl-0w-ppa"/>
-                <outlet property="searchResultsDelegate" destination="-1" id="064-g4-7yn"/>
-            </connections>
-        </searchDisplayController>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

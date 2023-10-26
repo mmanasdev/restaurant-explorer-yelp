@@ -15,6 +15,8 @@
 		3A43AC522AEAAD4200C5C22A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC502AEAAD4200C5C22A /* SearchViewController.xib */; };
 		3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC542AEAAEEB00C5C22A /* Business.swift */; };
 		3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC562AEAB28200C5C22A /* BusinessMock.json */; };
+		3A43AC5A2AEAB9DB00C5C22A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC582AEAB9DB00C5C22A /* ListTableViewCell.swift */; };
+		3A43AC5B2AEAB9DB00C5C22A /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC592AEAB9DB00C5C22A /* ListTableViewCell.xib */; };
 		3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A12AE967770048DF46 /* AppDelegate.swift */; };
 		3A9918A42AE967770048DF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A32AE967770048DF46 /* SceneDelegate.swift */; };
 		3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A52AE967770048DF46 /* MainViewController.swift */; };
@@ -32,6 +34,8 @@
 		3A43AC502AEAAD4200C5C22A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		3A43AC542AEAAEEB00C5C22A /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		3A43AC562AEAB28200C5C22A /* BusinessMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessMock.json; sourceTree = "<group>"; };
+		3A43AC582AEAB9DB00C5C22A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		3A43AC592AEAB9DB00C5C22A /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		3A99189E2AE967770048DF46 /* restaurant-explorer-yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restaurant-explorer-yelp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9918A12AE967770048DF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9918A32AE967770048DF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				3A43AC432AE970C700C5C22A /* ListViewController.swift */,
 				3A43AC442AE970C700C5C22A /* ListViewController.xib */,
+				3A43AC582AEAB9DB00C5C22A /* ListTableViewCell.swift */,
+				3A43AC592AEAB9DB00C5C22A /* ListTableViewCell.xib */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */,
 				3A43AC522AEAAD4200C5C22A /* SearchViewController.xib in Resources */,
 				3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */,
+				3A43AC5B2AEAB9DB00C5C22A /* ListTableViewCell.xib in Resources */,
 				3A43AC4D2AE9712400C5C22A /* LocationViewController.xib in Resources */,
 				3A9918A92AE967770048DF46 /* MainViewController.storyboard in Resources */,
 			);
@@ -199,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A43AC512AEAAD4200C5C22A /* SearchViewController.swift in Sources */,
+				3A43AC5A2AEAB9DB00C5C22A /* ListTableViewCell.swift in Sources */,
 				3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
 				3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */,
