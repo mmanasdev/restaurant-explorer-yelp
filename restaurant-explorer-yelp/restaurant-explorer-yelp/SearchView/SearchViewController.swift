@@ -12,23 +12,12 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var listContainerView: UIView!
     
     private lazy var listViewController: ListViewController = {
-            return ListViewController(nibName: "ListViewController", bundle: nil)
-        }()
+        return ListViewController(nibName: "ListViewController", bundle: nil)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        let bundle = Bundle(for: type(of: self))
-        
-        guard let url = bundle.url(forResource: "BusinessMock", withExtension: "json") else {
-            return
-        }
-        
-        guard let json = try? Data(contentsOf: url) else { return  }
-        
-        let businessesMock: Businesses = try! JSONDecoder().decode(Businesses.self, from: json)
         setupInitialViewController()
     }
     

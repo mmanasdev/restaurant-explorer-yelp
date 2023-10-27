@@ -16,15 +16,21 @@ class ListTableViewCell: UITableViewCell {
     
     
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-//        nameLabel.text = ""
-//        addressLabel.text = ""
-//        punctuationLabel.text = ""
-//        priceLabel.text = ""
+        nameLabel.text = ""
+        addressLabel.text = ""
+        punctuationLabel.text = ""
+        priceLabel.text = ""
     }
+    
+    func configureCellWith(_ business: Business) {
+        self.nameLabel.text = business.name
+        self.addressLabel.text = business.location?.displayFullAdress()
+        self.priceLabel.text = business.price
+        self.punctuationLabel.text = business.rating?.description
+    }
+    
 //
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)
