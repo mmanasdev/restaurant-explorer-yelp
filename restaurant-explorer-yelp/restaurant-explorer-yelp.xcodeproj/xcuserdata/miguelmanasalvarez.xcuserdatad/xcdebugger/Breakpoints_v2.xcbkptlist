@@ -7,70 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BF922DA2-2AAD-4721-BE70-AD17D7E37525"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "restaurant-explorer-yelp/SearchView/SearchViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BF922DA2-2AAD-4721-BE70-AD17D7E37525 - 55466ef8c0f7b880"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "restaurant_explorer_yelp.SearchViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "restaurant-explorer-yelp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/SearchView/SearchViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "309">
-               </Location>
-               <Location
-                  uuid = "BF922DA2-2AAD-4721-BE70-AD17D7E37525 - 55466ef8c0f7b880"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "restaurant_explorer_yelp.SearchViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "restaurant-explorer-yelp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/SearchView/SearchViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "549">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "73AA3277-0A0C-4B78-9570-61F0D488A9FE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "restaurant-explorer-yelp/SearchView/SearchViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2320AE7B-D4CC-42D7-98F4-FF3B12A381A7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -78,8 +14,8 @@
             filePath = "restaurant-explorer-yelp/ListView/ListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
