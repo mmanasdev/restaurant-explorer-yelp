@@ -9,32 +9,40 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    //  MARK: @IBOutlets
     @IBOutlet weak private(set) var segmentedControl: UISegmentedControl!
-    
     @IBOutlet weak private(set) var containerView: UIView!
     
     let searchController = UISearchController(searchResultsController: nil)
     
     private lazy var searchViewController: SearchViewController = {
-            return SearchViewController(nibName: "SearchViewController", bundle: nil)
-        }()
-        
-        private lazy var locationViewController: LocationViewController = {
-            return LocationViewController(nibName: "LocationViewController", bundle: nil)
-        }()
+        return SearchViewController(nibName: "SearchViewController", bundle: nil)
+    }()
     
+    private lazy var locationViewController: LocationViewController = {
+        return LocationViewController(nibName: "LocationViewController", bundle: nil)
+    }()
     
+    //  MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Yelp! Explorer"
+        setupSegmentedControl()
         setupInitialViewController()
         setupSearchView()
     }
     
+    //  MARK: Setup Views
     private func setupInitialViewController() {
         addChild(searchViewController)
         searchViewController.view.frame = containerView.bounds
         containerView.addSubview(searchViewController.view)
         searchViewController.didMove(toParent: self)
+    }
+    
+    private func setupSegmentedControl() {
+        segmentedControl.setTitle("Search by Attr.", forSegmentAt: 0)
+        segmentedControl.setTitle("Search by loc.", forSegmentAt: 1)
     }
     
     private func setupSearchView() {
@@ -45,6 +53,7 @@ class MainViewController: UIViewController {
         definesPresentationContext = true
     }
     
+    //  MARK: SegmentedControl Actions
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             remove(child: locationViewController)
@@ -69,17 +78,13 @@ class MainViewController: UIViewController {
         child.view.removeFromSuperview()
         child.removeFromParent()
     }
-    
-    
 }
 
+// MARK: UISearchResultsUpdating
 extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         print("searchBar.text: \(searchBar.text!)")
-//        let category = Candy.Category(rawValue:
-//                                        searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex])
-//        filterContentForSearchText(searchBar.text!, category: category)
     }
     
     
