@@ -13,6 +13,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak private(set) var containerView: UIView!
     
+    let searchController = UISearchController(searchResultsController: nil)
+    
     private lazy var searchViewController: SearchViewController = {
             return SearchViewController(nibName: "SearchViewController", bundle: nil)
         }()
@@ -25,9 +27,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupInitialViewController()
+        setupSearchView()
     }
-    
-    
     
     private func setupInitialViewController() {
         addChild(searchViewController)
@@ -36,13 +37,23 @@ class MainViewController: UIViewController {
         searchViewController.didMove(toParent: self)
     }
     
+    private func setupSearchView() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search by attributes"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             remove(child: locationViewController)
             add(child: searchViewController)
+            navigationItem.searchController = searchController
         } else {
             remove(child: searchViewController)
             add(child: locationViewController)
+            navigationItem.searchController = nil
         }
     }
     
@@ -62,3 +73,14 @@ class MainViewController: UIViewController {
     
 }
 
+extension MainViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        print("searchBar.text: \(searchBar.text!)")
+//        let category = Candy.Category(rawValue:
+//                                        searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex])
+//        filterContentForSearchText(searchBar.text!, category: category)
+    }
+    
+    
+}
