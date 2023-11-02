@@ -7,26 +7,17 @@
 
 import UIKit
 
-class LocationViewController: UIViewController {
+class LocationViewController: ParentContentListViewController {
 
     @IBOutlet weak var listContainerView: UIView!
-    
-    
-    private lazy var listViewController: ListViewController = {
-        return ListViewController(nibName: "ListViewController", bundle: nil)
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupInitialViewController()
     }
     
-    private func setupInitialViewController() {
-        addChild(listViewController)
-        listViewController.view.frame = listContainerView.bounds
-        listContainerView.addSubview(listViewController.view)
-        listViewController.didMove(toParent: self)
+    override func setListContainerView() -> UIView? {
+        return listContainerView
     }
 
 }

@@ -84,7 +84,8 @@ class MainViewController: UIViewController {
 extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
-        print("searchBar.text: \(searchBar.text!)")
+        guard let textToSearch = searchBar.text else { return }
+        print("searchBar.text: \(textToSearch)")
     }
     
     

@@ -23,6 +23,7 @@
 		3A9918A92AE967770048DF46 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9918A72AE967770048DF46 /* MainViewController.storyboard */; };
 		3A9918AB2AE9677A0048DF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9918AA2AE9677A0048DF46 /* Assets.xcassets */; };
 		3A9918AE2AE9677A0048DF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9918AC2AE9677A0048DF46 /* LaunchScreen.storyboard */; };
+		3AAA3AFE2AF4235200BE670E /* ParentContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA3AFD2AF4235100BE670E /* ParentContentListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3A9918AA2AE9677A0048DF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9918AD2AE9677A0048DF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9918AF2AE9677A0048DF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AAA3AFD2AF4235100BE670E /* ParentContentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentContentListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				3A9918A72AE967770048DF46 /* MainViewController.storyboard */,
 				3A9918A52AE967770048DF46 /* MainViewController.swift */,
+				3AAA3AFD2AF4235100BE670E /* ParentContentListViewController.swift */,
 				3A43AC4E2AEAAD2400C5C22A /* SearchView */,
 				3A43AC472AE970DC00C5C22A /* LocationView */,
 				3A43AC422AE9709200C5C22A /* ListView */,
@@ -216,6 +219,7 @@
 				3A43AC512AEAAD4200C5C22A /* SearchViewController.swift in Sources */,
 				3A43AC5A2AEAB9DB00C5C22A /* ListTableViewCell.swift in Sources */,
 				3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */,
+				3AAA3AFE2AF4235200BE670E /* ParentContentListViewController.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
 				3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */,
 				3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */,
