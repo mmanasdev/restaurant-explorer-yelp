@@ -67,6 +67,4 @@ extension ListViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }

@@ -29,11 +29,11 @@ class ParentContentListViewController: UIViewController {
         listViewController.didMove(toParent: self)
     }
     
-//    func setListViewController() -> UIViewController? {
-//        return nil
-//    }
-    
     func setListContainerView() -> UIView? {
         return nil
+    }
+    
+    func updateList(businesses: Businesses) {
+        listViewController.updateTable(businesses: businesses)
     }
 }
