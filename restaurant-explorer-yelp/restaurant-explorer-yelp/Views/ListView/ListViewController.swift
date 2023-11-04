@@ -17,13 +17,16 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         
         configureTableView()
-        fetchMockModels()
+//        fetchMockModels()
     }
 }
 
 extension ListViewController {
     func updateTable(businesses: Businesses) {
         self.businessesMock = businesses
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -54,7 +57,7 @@ extension ListViewController: UITableViewDelegate { }
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businessesMock.businesses?.count ?? 0
+        return businessesMock?.businesses?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
