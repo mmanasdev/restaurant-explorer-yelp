@@ -19,15 +19,10 @@ class MainViewController: UIViewController {
         return SearchViewController(nibName: "SearchViewController", bundle: nil)
     }()
     
-//    private lazy var locationViewController: LocationViewController = {
-//        return LocationViewController(nibName: "LocationViewController", bundle: nil)
-//    }()
-    
     //  MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Yelp! Explorer"
-//        setupSegmentedControl()
         setupInitialViewController()
         setupSearchView()
     }
@@ -39,11 +34,6 @@ class MainViewController: UIViewController {
         containerView.addSubview(searchViewController.view)
         searchViewController.didMove(toParent: self)
     }
-    
-//    private func setupSegmentedControl() {
-//        segmentedControl.setTitle("Search by Attr.", forSegmentAt: 0)
-//        segmentedControl.setTitle("Search by loc.", forSegmentAt: 1)
-//    }
     
     private func setupSearchView() {
         searchController.searchResultsUpdater = self
@@ -60,7 +50,7 @@ class MainViewController: UIViewController {
             "Authorization": "Bearer wa0IDrjoA24mYq2ZtTQzBQ7XZwmcl7NvcYsvDFUgycTS8MvmIUx48AgkuZst-lPZXBtmH6ehkiCCSbiFHT91ahVcLhasVFZxTuo2xRIGD9SWv0L52AQRQvyCjhI4ZXYx"
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.yelp.com/v3/businesses/search?location=\(word)&limit=2")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.yelp.com/v3/businesses/search?location=\(word)&limit=20")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
