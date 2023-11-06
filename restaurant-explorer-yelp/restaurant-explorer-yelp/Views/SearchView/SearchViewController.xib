@@ -19,35 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-OA-Dtc">
-                    <rect key="frame" x="0.0" y="59" width="393" height="96"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="96" id="Nsv-6D-cU3"/>
-                    </constraints>
-                </view>
                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-ax-ifI">
-                    <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                 </containerView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemPurpleColor"/>
             <constraints>
-                <constraint firstItem="P2h-OA-Dtc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VnK-PT-CgR"/>
+                <constraint firstItem="Khh-ax-ifI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VhM-ld-Oet"/>
                 <constraint firstItem="Khh-ax-ifI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yc5-nm-5sI"/>
                 <constraint firstItem="Khh-ax-ifI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="g6Q-U5-dyt"/>
-                <constraint firstItem="Khh-ax-ifI" firstAttribute="top" secondItem="P2h-OA-Dtc" secondAttribute="bottom" id="gWK-GE-Bpg"/>
-                <constraint firstItem="P2h-OA-Dtc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hP9-pZ-nng"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P2h-OA-Dtc" secondAttribute="trailing" id="mXu-vQ-arA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Khh-ax-ifI" secondAttribute="trailing" id="tmL-Qe-8mt"/>
             </constraints>
             <point key="canvasLocation" x="57" y="20"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
