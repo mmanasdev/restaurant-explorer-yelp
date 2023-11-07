@@ -20,5 +20,117 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE17B477-F4D1-4476-B012-555059012F3A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "performSearch(searchTerm:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE17B477-F4D1-4476-B012-555059012F3A - 14f5b1c386dc4889"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;restaurant_explorer_yelp.Businesses, Swift.Error&gt;) -&gt; () in restaurant_explorer_yelp.MainViewModel.performSearch(searchTerm: Swift.String) -&gt; ()"
+                  moduleName = "restaurant-explorer-yelp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "CE17B477-F4D1-4476-B012-555059012F3A - e426d9dadd01084f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;restaurant_explorer_yelp.Businesses, Swift.Error&gt;) -&gt; () in restaurant_explorer_yelp.MainViewModel.performSearch(searchTerm: Swift.String) -&gt; ()"
+                  moduleName = "restaurant-explorer-yelp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "125">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18E71A32-307A-4671-805A-D5D69B845D2E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "performSearch(searchTerm:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "18E71A32-307A-4671-805A-D5D69B845D2E - 3f6a9aee5db40ce9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "restaurant_explorer_yelp.MainViewModel.performSearch(searchTerm: Swift.String) -&gt; ()"
+                  moduleName = "restaurant-explorer-yelp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "18E71A32-307A-4671-805A-D5D69B845D2E - 14f5b1c386dc48e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;restaurant_explorer_yelp.Businesses, Swift.Error&gt;) -&gt; () in restaurant_explorer_yelp.MainViewModel.performSearch(searchTerm: Swift.String) -&gt; ()"
+                  moduleName = "restaurant-explorer-yelp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miguelmanasalvarez/ios/restaurant-explorer-yelp/restaurant-explorer-yelp/restaurant-explorer-yelp/ViewModels/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC182975-E4F5-40E4-B7F5-68E0F4238169"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "restaurant-explorer-yelp/Views/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "updateSearchResults(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
