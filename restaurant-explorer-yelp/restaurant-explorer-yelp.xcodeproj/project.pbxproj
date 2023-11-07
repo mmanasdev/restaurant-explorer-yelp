@@ -17,6 +17,7 @@
 		3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC562AEAB28200C5C22A /* BusinessMock.json */; };
 		3A43AC5A2AEAB9DB00C5C22A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC582AEAB9DB00C5C22A /* ListTableViewCell.swift */; };
 		3A43AC5B2AEAB9DB00C5C22A /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC592AEAB9DB00C5C22A /* ListTableViewCell.xib */; };
+		3A6D20AE2AFAD08500925592 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D20AD2AFAD08500925592 /* MainViewModel.swift */; };
 		3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A12AE967770048DF46 /* AppDelegate.swift */; };
 		3A9918A42AE967770048DF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A32AE967770048DF46 /* SceneDelegate.swift */; };
 		3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9918A52AE967770048DF46 /* MainViewController.swift */; };
@@ -37,6 +38,7 @@
 		3A43AC562AEAB28200C5C22A /* BusinessMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BusinessMock.json; sourceTree = "<group>"; };
 		3A43AC582AEAB9DB00C5C22A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		3A43AC592AEAB9DB00C5C22A /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		3A6D20AD2AFAD08500925592 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		3A99189E2AE967770048DF46 /* restaurant-explorer-yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "restaurant-explorer-yelp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9918A12AE967770048DF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9918A32AE967770048DF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3A6D20AC2AFAD04600925592 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A6D20AD2AFAD08500925592 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		3A9918952AE967770048DF46 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		3A9918A02AE967770048DF46 /* restaurant-explorer-yelp */ = {
 			isa = PBXGroup;
 			children = (
+				3A6D20AC2AFAD04600925592 /* ViewModels */,
 				3AC5E0042AF41FEE00182A75 /* Views */,
 				3A43AC532AEAAEBB00C5C22A /* Models */,
 				3A9918A12AE967770048DF46 /* AppDelegate.swift */,
@@ -221,6 +232,7 @@
 				3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */,
 				3AAA3AFE2AF4235200BE670E /* ParentContentListViewController.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
+				3A6D20AE2AFAD08500925592 /* MainViewModel.swift in Sources */,
 				3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */,
 				3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */,
 				3A43AC452AE970C700C5C22A /* ListViewController.swift in Sources */,
