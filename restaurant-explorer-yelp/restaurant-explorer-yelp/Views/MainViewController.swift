@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak private(set) var containerView: UIView!
     
     let searchController = UISearchController(searchResultsController: nil)
-    var searchViewModel: MainViewModel?
+    var searchViewModel: MainViewModel!
     private lazy var searchViewController: SearchViewController = {
         return SearchViewController(nibName: "SearchViewController", bundle: nil)
     }()
@@ -27,12 +27,12 @@ class MainViewController: UIViewController {
         title = "Yelp! Explorer"
         setupInitialViewController()
         setupSearchView()
+        searchViewModel = MainViewModel()
         bindViewModel()
     }
     
     private func bindViewModel() {
-        searchViewModel = MainViewModel()
-        searchViewModel?.$searchResults
+        searchViewModel.$searchResults
                 .receive(on: RunLoop.main)
                 .compactMap { $0 }
                 .sink { [weak self] bbb in
@@ -102,7 +102,7 @@ extension MainViewController: UISearchResultsUpdating {
         let searchBar = searchController.searchBar
         guard let textToSearch = searchBar.text else { return }
         print("searchBar.text: \(textToSearch)")
-        self.searchViewModel?.searchText = textToSearch
+        self.searchViewModel.searchText = textToSearch
 //        search(word: textToSearch) { result in
 //            switch result {
 //            case .success(let bus):
