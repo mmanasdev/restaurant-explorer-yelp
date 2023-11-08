@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A092E2C2AFC14EC00AF852C /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2B2AFC14EC00AF852C /* SearchService.swift */; };
+		3A092E302AFC18C200AF852C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2F2AFC18C200AF852C /* NetworkManager.swift */; };
+		3A092E322AFC1A6800AF852C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E312AFC1A6800AF852C /* HTTPRequest.swift */; };
 		3A43AC452AE970C700C5C22A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC432AE970C700C5C22A /* ListViewController.swift */; };
 		3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC442AE970C700C5C22A /* ListViewController.xib */; };
 		3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A092E2B2AFC14EC00AF852C /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		3A092E2F2AFC18C200AF852C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3A092E312AFC1A6800AF852C /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		3A43AC432AE970C700C5C22A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3A43AC442AE970C700C5C22A /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A092E2A2AFC14D900AF852C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A092E2B2AFC14EC00AF852C /* SearchService.swift */,
+				3A092E2F2AFC18C200AF852C /* NetworkManager.swift */,
+				3A092E312AFC1A6800AF852C /* HTTPRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3A43AC422AE9709200C5C22A /* ListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +142,7 @@
 		3A9918A02AE967770048DF46 /* restaurant-explorer-yelp */ = {
 			isa = PBXGroup;
 			children = (
+				3A092E2A2AFC14D900AF852C /* Service */,
 				3A6D20AC2AFAD04600925592 /* ViewModels */,
 				3AC5E0042AF41FEE00182A75 /* Views */,
 				3A43AC532AEAAEBB00C5C22A /* Models */,
@@ -230,6 +247,9 @@
 				3A43AC512AEAAD4200C5C22A /* SearchViewController.swift in Sources */,
 				3A43AC5A2AEAB9DB00C5C22A /* ListTableViewCell.swift in Sources */,
 				3A43AC552AEAAEEB00C5C22A /* Business.swift in Sources */,
+				3A092E322AFC1A6800AF852C /* HTTPRequest.swift in Sources */,
+				3A092E302AFC18C200AF852C /* NetworkManager.swift in Sources */,
+				3A092E2C2AFC14EC00AF852C /* SearchService.swift in Sources */,
 				3AAA3AFE2AF4235200BE670E /* ParentContentListViewController.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
 				3A6D20AE2AFAD08500925592 /* MainViewModel.swift in Sources */,
