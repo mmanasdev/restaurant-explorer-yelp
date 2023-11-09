@@ -11,7 +11,6 @@ import Combine
 class MainViewController: UIViewController {
     
     //  MARK: @IBOutlets
-//    @IBOutlet weak private(set) var segmentedControl: UISegmentedControl!
     @IBOutlet weak private(set) var containerView: UIView!
     
     let searchController = UISearchController(searchResultsController: nil)
@@ -36,14 +35,10 @@ class MainViewController: UIViewController {
     private func bindViewModel() {
         searchViewModel.$searchResults
                 .receive(on: RunLoop.main)
-                .compactMap { $0 }
-                .sink { [weak self] bbb in
-                    print("weak")
-                    self?.searchViewController.updateList(businesses: bbb)
+                .sink { [weak self] businesses in
+                    self?.searchViewController.updateList(businesses: businesses)
                 }
                 .store(in: &cancellables)
-
-            // Añadir más enlaces según sea necesario
         }
     
     //  MARK: Setup Views
@@ -61,9 +56,6 @@ class MainViewController: UIViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }
-    
-    
-    
 }
 
 // MARK: UISearchResultsUpdating
@@ -71,17 +63,6 @@ extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         guard let textToSearch = searchBar.text else { return }
-        print("searchBar.text: \(textToSearch)")
         self.searchViewModel.searchText = textToSearch
-//        search(word: textToSearch) { result in
-//            switch result {
-//            case .success(let bus):
-//                self.searchViewController.updateList(businesses: bus)
-//                break
-//            case .failure(let err): break
-//            }
-//        }
     }
-    
-    
 }
