@@ -26,9 +26,6 @@ class MainViewController: UIViewController {
         title = "Yelp! Explorer"
         setupInitialViewController()
         setupSearchView()
-        
-        let searchService = SearchService(networkService: NetworkManager())
-        searchViewModel = MainViewModel(searchService: searchService)
         bindViewModel()
     }
     

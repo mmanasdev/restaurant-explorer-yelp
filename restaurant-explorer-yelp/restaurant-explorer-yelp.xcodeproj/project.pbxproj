@@ -10,6 +10,7 @@
 		3A092E2C2AFC14EC00AF852C /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2B2AFC14EC00AF852C /* SearchService.swift */; };
 		3A092E302AFC18C200AF852C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2F2AFC18C200AF852C /* NetworkManager.swift */; };
 		3A092E322AFC1A6800AF852C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E312AFC1A6800AF852C /* HTTPRequest.swift */; };
+		3A4040E22AFD7C8D00417D61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4040E12AFD7C8D00417D61 /* AppCoordinator.swift */; };
 		3A43AC452AE970C700C5C22A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC432AE970C700C5C22A /* ListViewController.swift */; };
 		3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43AC442AE970C700C5C22A /* ListViewController.xib */; };
 		3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */; };
@@ -34,6 +35,7 @@
 		3A092E2B2AFC14EC00AF852C /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		3A092E2F2AFC18C200AF852C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3A092E312AFC1A6800AF852C /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		3A4040E12AFD7C8D00417D61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3A43AC432AE970C700C5C22A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3A43AC442AE970C700C5C22A /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		3A43AC4A2AE9712400C5C22A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		3AC5E0042AF41FEE00182A75 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A4040E12AFD7C8D00417D61 /* AppCoordinator.swift */,
 				3A9918A72AE967770048DF46 /* MainViewController.storyboard */,
 				3A9918A52AE967770048DF46 /* MainViewController.swift */,
 				3AAA3AFD2AF4235100BE670E /* ParentContentListViewController.swift */,
@@ -250,6 +253,7 @@
 				3A092E322AFC1A6800AF852C /* HTTPRequest.swift in Sources */,
 				3A092E302AFC18C200AF852C /* NetworkManager.swift in Sources */,
 				3A092E2C2AFC14EC00AF852C /* SearchService.swift in Sources */,
+				3A4040E22AFD7C8D00417D61 /* AppCoordinator.swift in Sources */,
 				3AAA3AFE2AF4235200BE670E /* ParentContentListViewController.swift in Sources */,
 				3A43AC4C2AE9712400C5C22A /* LocationViewController.swift in Sources */,
 				3A6D20AE2AFAD08500925592 /* MainViewModel.swift in Sources */,
@@ -407,7 +411,6 @@
 				INFOPLIST_FILE = "restaurant-explorer-yelp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,7 +437,6 @@
 				INFOPLIST_FILE = "restaurant-explorer-yelp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MainViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
