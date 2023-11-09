@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SearchServiceProtocol {
-    func search(word: String, completion: @escaping (Result<Businesses, Error>) -> Void)
+    func search(location: String, completion: @escaping (Result<Businesses, Error>) -> Void)
 }
 
 class SearchService: SearchServiceProtocol {
@@ -18,15 +18,14 @@ class SearchService: SearchServiceProtocol {
         self.networkService = networkService
     }
     
-    internal func search(word: String, completion: @escaping (Result<Businesses, Error>) -> Void)  {
+    internal func search(location: String, completion: @escaping (Result<Businesses, Error>) -> Void)  {
         let queryItems: [URLQueryItem] = [
-            URLQueryItem(name: "location", value: word),
+            URLQueryItem(name: "location", value: location),
             URLQueryItem(name: "limit", value: "20")
         ]
         
         let httpRequest = HTTPRequest(method: .get, path: "search", queryItems: queryItems)
         
         networkService.performRequest(request: httpRequest, completion: completion)
-        
     }
 }

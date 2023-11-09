@@ -33,7 +33,7 @@ class ParentContentListViewController: UIViewController {
         return nil
     }
     
-    func updateList(businesses: Businesses) {
-        listViewController.updateTable(businesses: businesses)
+    func updateList(businesses: Businesses?) {
+        listViewController.updateTable(businesses)
     }
 }

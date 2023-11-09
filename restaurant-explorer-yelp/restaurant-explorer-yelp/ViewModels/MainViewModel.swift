@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 class MainViewModel {
-    // Propiedades publicadas que la vista puede observar
+    
     @Published var searchText: String = ""
     @Published var searchResults: Businesses?
 //    @Published var isLoading: Bool = false
@@ -22,10 +22,10 @@ class MainViewModel {
     init(searchService: SearchServiceProtocol) {
         self.searchService = searchService
 
-        // Establece el enlace para realizar una búsqueda cada vez que el texto cambie
+        
         $searchText
-            .removeDuplicates() // Evita la búsqueda si el texto no ha cambiado
-            .debounce(for: 0.2, scheduler: RunLoop.main) // Añade un retraso para evitar búsquedas por cada letra
+            .removeDuplicates()
+            .debounce(for: 0.2, scheduler: RunLoop.main)
             .sink { [weak self] in self?.performSearch(searchTerm: $0) }
             .store(in: &cancellables)
     }
@@ -37,7 +37,7 @@ class MainViewModel {
         }
         
         
-        self.searchService.search(word: searchTerm) {[weak self] result in
+        self.searchService.search(location: searchTerm) {[weak self] result in
             DispatchQueue.main.async {
 //                self?.isLoading = false
                 switch result {
