@@ -22,7 +22,7 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController {
-    func updateTable(businesses: Businesses) {
+    func updateTable(_ businesses: Businesses?) {
         self.businessesMock = businesses
         DispatchQueue.main.async {
             self.tableView.reloadData()
