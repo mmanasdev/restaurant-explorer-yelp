@@ -125,6 +125,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		3A8BA41D2AFEDA1100DC05D3 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		3A9918952AE967770048DF46 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +174,7 @@
 				3A43AC4E2AEAAD2400C5C22A /* SearchView */,
 				3A43AC472AE970DC00C5C22A /* LocationView */,
 				3A43AC422AE9709200C5C22A /* ListView */,
+				3A8BA41D2AFEDA1100DC05D3 /* DetailView */,
 			);
 			path = Views;
 			sourceTree = "<group>";

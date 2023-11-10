@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol ParentContentListViewControllerDeleagate: AnyObject {
+    func didSelectBusiness(_ business: Business, parentContentListViewController: ParentContentListViewController)
+}
+
 class ParentContentListViewController: UIViewController {
+    
+    weak var parentContentListDelegate:ParentContentListViewControllerDeleagate?
     
     private lazy var listViewController: ListViewController = {
             return ListViewController(nibName: "ListViewController", bundle: nil)
@@ -15,7 +21,7 @@ class ParentContentListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        listViewController.listDelegate = self
         setupInitialViewController()
     }
     
@@ -35,5 +41,11 @@ class ParentContentListViewController: UIViewController {
     
     func updateList(businesses: Businesses?) {
         listViewController.updateTable(businesses)
+    }
+}
+
+extension ParentContentListViewController: ListViewControllerDelegate {
+    func didSelectBusiness(_ business: Business, listViewController: ListViewController) {
+        parentContentListDelegate?.didSelectBusiness(business, parentContentListViewController: self)
     }
 }
