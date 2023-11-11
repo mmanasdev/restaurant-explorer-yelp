@@ -68,6 +68,7 @@ extension MainViewController: UISearchResultsUpdating {
 
 extension MainViewController: ParentContentListViewControllerDeleagate {
     func didSelectBusiness(_ business: Business, parentContentListViewController: ParentContentListViewController) {
-        print("business: \(business)")
+        let detailViewController = DetailViewController(business: business)
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

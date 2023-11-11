@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0859222B002CE300746F30 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0859202B002CE300746F30 /* DetailViewController.swift */; };
+		3A0859232B002CE300746F30 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0859212B002CE300746F30 /* DetailViewController.xib */; };
 		3A092E2C2AFC14EC00AF852C /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2B2AFC14EC00AF852C /* SearchService.swift */; };
 		3A092E302AFC18C200AF852C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E2F2AFC18C200AF852C /* NetworkManager.swift */; };
 		3A092E322AFC1A6800AF852C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A092E312AFC1A6800AF852C /* HTTPRequest.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0859202B002CE300746F30 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3A0859212B002CE300746F30 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		3A092E2B2AFC14EC00AF852C /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		3A092E2F2AFC18C200AF852C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3A092E312AFC1A6800AF852C /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		3A8BA41D2AFEDA1100DC05D3 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				3A0859202B002CE300746F30 /* DetailViewController.swift */,
+				3A0859212B002CE300746F30 /* DetailViewController.xib */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				3A9918AB2AE9677A0048DF46 /* Assets.xcassets in Resources */,
 				3A43AC572AEAB28200C5C22A /* BusinessMock.json in Resources */,
 				3A43AC522AEAAD4200C5C22A /* SearchViewController.xib in Resources */,
+				3A0859232B002CE300746F30 /* DetailViewController.xib in Resources */,
 				3A43AC462AE970C700C5C22A /* ListViewController.xib in Resources */,
 				3A43AC5B2AEAB9DB00C5C22A /* ListTableViewCell.xib in Resources */,
 				3A43AC4D2AE9712400C5C22A /* LocationViewController.xib in Resources */,
@@ -267,6 +274,7 @@
 				3A6D20AE2AFAD08500925592 /* MainViewModel.swift in Sources */,
 				3A9918A62AE967770048DF46 /* MainViewController.swift in Sources */,
 				3A9918A22AE967770048DF46 /* AppDelegate.swift in Sources */,
+				3A0859222B002CE300746F30 /* DetailViewController.swift in Sources */,
 				3A43AC452AE970C700C5C22A /* ListViewController.swift in Sources */,
 				3A9918A42AE967770048DF46 /* SceneDelegate.swift in Sources */,
 			);
