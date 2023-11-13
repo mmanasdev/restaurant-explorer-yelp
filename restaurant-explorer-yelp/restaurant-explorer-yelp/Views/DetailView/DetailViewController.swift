@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var urlAddressLabel: UILabel!
+    @IBOutlet weak var urlAddress: UITextView!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
@@ -39,8 +39,17 @@ class DetailViewController: UIViewController {
         self.phoneLabel.text = business.displayPhone
         self.rateLabel.text =  business.rating?.description
         self.priceLabel.text = business.price
-        guard let imageURL = business.imageURL, let url = URL(string: imageURL) else { return }
-        self.photoImage.downloadImage(from: url)
+        if let imageURLString = business.imageURL, let imageURL = URL(string: imageURLString) {
+            self.photoImage.downloadImage(from: imageURL)
+        }
+        
+        if let businessURLString = business.url {
+            let attributedString = NSMutableAttributedString(string: urlAddress.text)
+            attributedString.addAttribute(.link, value: businessURLString, range: NSRange(location: 0, length: urlAddress.text.count))
+            self.urlAddress.attributedText = attributedString
+            self.urlAddress.isUserInteractionEnabled = true
+            self.urlAddress.isEditable = false
+        }
     }
 }
 
