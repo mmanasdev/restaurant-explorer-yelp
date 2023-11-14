@@ -49,8 +49,18 @@ class DetailViewController: UIViewController {
             self.urlAddress.attributedText = attributedString
             self.urlAddress.isUserInteractionEnabled = true
             self.urlAddress.isEditable = false
+            self.urlAddress.delegate = self
         }
     }
+}
+
+extension DetailViewController: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        let businessBrowserViewController = BusinessBrowserViewController(businessName: business.name ?? "", businessURL: URL)
+        let navController = UINavigationController(rootViewController: businessBrowserViewController)
+        self.present(navController, animated: true)
+            return false
+        }
 }
 
 extension UIImageView {
