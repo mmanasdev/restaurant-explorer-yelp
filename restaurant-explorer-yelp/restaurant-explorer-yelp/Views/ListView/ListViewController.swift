@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol ListViewControllerDelegate: AnyObject {
+    func didSelectBusiness(_ business: Business, listViewController: ListViewController)
+}
+
 class ListViewController: UIViewController {
+    
+    weak var listDelegate: ListViewControllerDelegate?
     
     @IBOutlet weak private(set) var tableView: UITableView!
     
-    var businessesMock: Businesses!
+    var businesses: Businesses!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +29,7 @@ class ListViewController: UIViewController {
 
 extension ListViewController {
     func updateTable(_ businesses: Businesses?) {
-        self.businessesMock = businesses
+        self.businesses = businesses
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -48,22 +54,28 @@ extension ListViewController {
         do {
             let json = try Data(contentsOf: url)
             let businessesMock: Businesses = try JSONDecoder().decode(Businesses.self, from: json)
-            self.businessesMock = businessesMock
+            self.businesses = businessesMock
         } catch {}
     }
 }
 
-extension ListViewController: UITableViewDelegate { }
+extension ListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let businesses = businesses.businesses else { return }
+        listDelegate?.didSelectBusiness(businesses[indexPath.row], listViewController: self)
+    }
+}
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businessesMock?.businesses?.count ?? 0
+        return businesses?.businesses?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
             let cell: ListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as? ListTableViewCell,
-            let businesses = businessesMock.businesses
+            let businesses = businesses.businesses
         else { return UITableViewCell() }
         
         cell.configureCellWith(businesses[indexPath.row])

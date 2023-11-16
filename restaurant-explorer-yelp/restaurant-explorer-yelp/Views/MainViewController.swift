@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     var searchViewModel: MainViewModel!
+    
     private lazy var searchViewController: SearchViewController = {
         return SearchViewController(nibName: "SearchViewController", bundle: nil)
     }()
@@ -44,6 +45,7 @@ class MainViewController: UIViewController {
         searchViewController.view.frame = containerView.bounds
         containerView.addSubview(searchViewController.view)
         searchViewController.didMove(toParent: self)
+        searchViewController.parentContentListDelegate = self
     }
     
     private func setupSearchView() {
@@ -61,5 +63,12 @@ extension MainViewController: UISearchResultsUpdating {
         let searchBar = searchController.searchBar
         guard let textToSearch = searchBar.text else { return }
         self.searchViewModel.searchText = textToSearch
+    }
+}
+
+extension MainViewController: ParentContentListViewControllerDeleagate {
+    func didSelectBusiness(_ business: Business, parentContentListViewController: ParentContentListViewController) {
+        let detailViewController = DetailViewController(business: business)
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
